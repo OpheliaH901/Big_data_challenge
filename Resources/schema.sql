@@ -6,6 +6,22 @@ CREATE TABLE review_id_table (
   review_date DATE -- this should be in the formate yyyy-mm-dd
 );
 
+CREATE TABLE review_shoes_table (
+  review_id TEXT PRIMARY KEY NOT NULL,
+  customer_id INTEGER,
+  product_id TEXT,
+  product_parent INTEGER,
+  review_date DATE -- this should be in the formate yyyy-mm-dd
+);
+
+CREATE TABLE review_music_table (
+  review_id TEXT PRIMARY KEY NOT NULL,
+  customer_id INTEGER,
+  product_id TEXT,
+  product_parent INTEGER,
+  review_date DATE -- this should be in the formate yyyy-mm-dd
+);
+
 -- This table will contain only unique values
 CREATE TABLE products (
   product_id TEXT PRIMARY KEY NOT NULL UNIQUE,
